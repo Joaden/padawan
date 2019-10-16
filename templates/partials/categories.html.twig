@@ -1,0 +1,9 @@
+<ul class="nav justify-content-center">
+    {% for categorie in categories %}
+        <li class="nav-item">
+            <a class="nav-link"
+               href="{{ path('projects_by_category', {id:categorie.id}) }}">
+                {{ categorie.nom }}</a>
+        </li>
+    {% endfor %}
+</ul>
